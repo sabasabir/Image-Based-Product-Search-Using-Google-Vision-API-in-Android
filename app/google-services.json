@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "847778284872",
+    "firebase_url": "https://image-based-product-search-default-rtdb.firebaseio.com",
+    "project_id": "image-based-product-search",
+    "storage_bucket": "image-based-product-search.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847778284872:android:c00101156027214997df7d",
+        "android_client_info": {
+          "package_name": "com.example.imageBasedProductSearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847778284872-lb2s5fuoeaia58ttp5ct9h73vs64bavr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPAwskrph0ufmaCiDRITUUFjgSqdZ1vjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847778284872-lb2s5fuoeaia58ttp5ct9h73vs64bavr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847778284872:android:1a9e5b46ef3bb4ca97df7d",
+        "android_client_info": {
+          "package_name": "com.example.image_basedproductsearchusinggooglevisionapiinandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847778284872-lb2s5fuoeaia58ttp5ct9h73vs64bavr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPAwskrph0ufmaCiDRITUUFjgSqdZ1vjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847778284872-lb2s5fuoeaia58ttp5ct9h73vs64bavr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
