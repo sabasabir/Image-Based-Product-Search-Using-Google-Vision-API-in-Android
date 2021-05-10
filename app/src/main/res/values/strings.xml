@@ -67,4 +67,5 @@
     <string name="dont_have_an_account_sign_up">Dont Have an Account? Sign Up</string>
     <string name="alreadyAccount">Already Have an Account? Log In</string>
     <string name="remember_me">Remember Me</string>
+    <string name="favorite">Favorite</string>
 </resources>

@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FavoriteActivity">
+
     <TextView
         android:id="@+id/textView44"
         android:layout_width="103dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
-        android:text="@string/Favorite"
+        android:text="@string/favorite"
         android:textColor="#333333"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,12 +24,12 @@
         android:layout_height="11dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="303dp"
+        android:contentDescription="back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image3"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/image3" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -43,7 +44,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image4" />
+        app:srcCompat="@drawable/image4"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView5"
