@@ -125,7 +125,7 @@ public class SignupActivity extends AppCompatActivity {
                                         public void onSuccess(Void aVoid) {
                                             Log.d(TAG, "onSuccess: User Created");
                                             Toast.makeText(SignupActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                                         }
                                     }).addOnFailureListener(new OnFailureListener() {
                                 @Override
@@ -149,7 +149,7 @@ public class SignupActivity extends AppCompatActivity {
                         }else {
                             Log.d(TAG, "onComplete: " + task.getException());
                             Toast.makeText(SignupActivity.this, "Error ! " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.GONE);
+                            //progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
