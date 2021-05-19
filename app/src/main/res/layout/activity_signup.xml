@@ -8,13 +8,11 @@
 
     <EditText
         android:id="@+id/signup_name"
-        android:layout_width="324dp"
-        android:layout_height="40dp"
+        android:layout_width="325dp"
+        android:layout_height="49dp"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="28dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/istiak_mahmud_remon"
@@ -29,10 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="28dp"
         android:text="@string/name"
         android:textColor="#332D2D"
         android:textSize="18sp"
@@ -72,13 +68,11 @@
 
     <EditText
         android:id="@+id/signup_email_address"
-        android:layout_width="328dp"
-        android:layout_height="42dp"
+        android:layout_width="329dp"
+        android:layout_height="45dp"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="28dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="28dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/helloistiak_gmail_com_hint"
@@ -124,15 +118,14 @@
 
     <TextView
         android:id="@+id/t_login"
-        android:layout_width="241dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
+        android:layout_width="265dp"
+        android:layout_height="34dp"
         android:text="@string/alreadyAccount"
         android:textColor="#E11C1C1C"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
 

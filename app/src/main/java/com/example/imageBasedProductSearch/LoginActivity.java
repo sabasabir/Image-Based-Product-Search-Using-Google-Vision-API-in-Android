@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.imageBasedProductSearch.Prevalent.Prevalent;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -25,6 +27,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Objects;
 
+import io.paperdb.Paper;
+
 
 public class LoginActivity extends AppCompatActivity {
     EditText mEmail,mPassword;
@@ -32,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView t_signup,forgotTextLink;
     FirebaseAuth fAuth;
 
+     CheckBox checkBoxRememberMe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +52,17 @@ public class LoginActivity extends AppCompatActivity {
         t_signup = findViewById(R.id.t_sign_up);
         forgotTextLink = findViewById(R.id.forgetPassword);
 
+        checkBoxRememberMe= findViewById(R.id.rememberMeCheckBox);
+        Paper.init(this);
+
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String email = mEmail.getText().toString().trim();
-                String password = mPassword.getText().toString().trim();
+                final String email = mEmail.getText().toString().trim();
+                final String password = mPassword.getText().toString().trim();
 
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is Required.");
@@ -73,6 +82,11 @@ public class LoginActivity extends AppCompatActivity {
                 // authenticate the user
 
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                    if(checkBoxRememberMe.isChecked()){
+//                        Paper.book().write(Prevalent.UserEmail, email);
+//                        Paper.book().write(Prevalent.UserPasswordKey, password);
+//
+//                    }
                     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -80,7 +94,8 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }else {
-                            Toast.makeText(LoginActivity.this, "Error ! " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Error ! You need to create a new account. " +
+                                    Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                         }
 
                     }
