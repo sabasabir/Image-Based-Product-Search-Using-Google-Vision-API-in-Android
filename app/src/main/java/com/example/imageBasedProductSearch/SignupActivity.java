@@ -1,6 +1,7 @@
 package com.example.imageBasedProductSearch;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.imageBasedProductSearch.utilis.Constants;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,6 +44,8 @@ public class SignupActivity extends AppCompatActivity {
     DatabaseReference fStore;
     String userID;
 
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +61,9 @@ public class SignupActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseDatabase.getInstance().getReference("Users");
 //
+
+        sharedPreferences = getSharedPreferences(Constants.PREF, MODE_PRIVATE);
+
 //        if(fAuth.getCurrentUser() != null){
 //            startActivity(new Intent(getApplicationContext(),MainActivity.class));
 //            finish();
@@ -125,7 +132,10 @@ public class SignupActivity extends AppCompatActivity {
                                         public void onSuccess(Void aVoid) {
                                             Log.d(TAG, "onSuccess: User Created");
                                             Toast.makeText(SignupActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
-                                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                                            editor.putString(Constants.KEY_EMAIL, email);
+                                            editor.apply();
+                                            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                                         }
                                     }).addOnFailureListener(new OnFailureListener() {
                                 @Override

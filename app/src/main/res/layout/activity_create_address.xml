@@ -63,7 +63,7 @@
         app:srcCompat="@drawable/image6" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/back_to_home_btn"
         android:layout_width="345dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
@@ -193,7 +193,7 @@
         android:layout_height="39dp"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/back_to_home_btn"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/editTextNumber"

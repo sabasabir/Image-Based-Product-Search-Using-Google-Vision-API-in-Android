@@ -15,7 +15,8 @@
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image3" />
+        app:srcCompat="@drawable/image3"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -30,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image4" />
+        app:srcCompat="@drawable/image4"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -38,6 +40,7 @@
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
+        android:contentDescription="@string/notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
@@ -60,12 +63,15 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image6" />
+        app:srcCompat="@drawable/image6"
+        android:contentDescription="@string/todo" />
+
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -76,19 +82,10 @@
         android:id="@+id/imageView7"
         android:layout_width="490dp"
         android:layout_height="619dp"
+        android:contentDescription="@string/display"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/image28" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="203dp"
-        android:layout_height="18dp"
-        android:text="Use Camera to Scan the Image"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
 </androidx.constraintlayout.widget.ConstraintLayout>

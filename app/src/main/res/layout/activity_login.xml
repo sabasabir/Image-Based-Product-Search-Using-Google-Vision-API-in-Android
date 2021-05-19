@@ -9,6 +9,7 @@
         android:id="@+id/login_btn"
         android:layout_width="330dp"
         android:layout_height="52dp"
+        android:layout_marginBottom="112dp"
         android:background="@drawable/custom_btn"
         android:ellipsize="middle"
         android:text="@string/login_btn"
@@ -17,8 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView5"
@@ -32,8 +33,7 @@
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
-    android:inputType="textPassword"
+        app:layout_constraintVertical_bias="0.149" /><![CDATA[
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.0"
@@ -43,20 +43,23 @@
 
     />
 
+
+
+    ]]>
+
     <EditText
         android:id="@+id/login_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -111,8 +114,9 @@
         android:id="@+id/t_sign_up"
         android:layout_width="247dp"
         android:layout_height="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="@string/dont_have_an_account_sign_up"
+        android:textAlignment="center"
         android:textColor="#E11C1C1C"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,22 +141,20 @@
         android:id="@+id/forgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="208dp"
         android:text="@string/forget_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toEndOf="@+id/rememberMeCheckBox"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <CheckBox
-        android:id="@+id/rememberMeCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_width="137dp"
+        android:layout_height="31dp"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="196dp"
         android:text="@string/remember_me"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

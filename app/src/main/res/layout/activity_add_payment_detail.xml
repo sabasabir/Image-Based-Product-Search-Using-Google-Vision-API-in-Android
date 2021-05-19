@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddPaymentDetailActivity">
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="28dp"
         android:layout_height="11dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="303dp"
+        android:contentDescription="@string/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +26,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
+        android:contentDescription="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
@@ -44,7 +47,8 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image5" />
+        app:srcCompat="@drawable/image5"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -54,6 +58,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="704dp"
+        android:contentDescription="@string/noti"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,13 +68,13 @@
         app:srcCompat="@drawable/image6" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/back_to_home_btn"
         android:layout_width="345dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_btn"
-        android:text="Add Payment"
+        android:text="@string/add_payment"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,6 +86,7 @@
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/upload"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -91,7 +97,7 @@
         android:id="@+id/textView20"
         android:layout_width="281dp"
         android:layout_height="41dp"
-        android:text="Add Payment Details"
+        android:text="@string/add_payment_details"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +112,8 @@
         android:layout_height="20dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="32dp"
-        android:text="Name"
+        android:text="@string/name"
+        android:textColor="#2B2828"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView20"
         app:layout_constraintHorizontal_bias="0.0"
@@ -119,16 +126,18 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Istiak mahmud Remon"
         app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        android:hint="@string/istiak_mamud_remon"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="108dp"
         android:layout_height="24dp"
         android:layout_marginTop="16dp"
-        android:text="Address Line"
+        android:text="@string/address_line"
+        android:textColor="#2B2828"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.004"
@@ -141,18 +150,20 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:text="Shewrapara 958 "
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        android:hint="@string/shewrapara_958"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="93dp"
         android:layout_height="23dp"
         android:layout_marginTop="16dp"
-        android:text="City"
+        android:text="@string/city"
+        android:textColor="#2B2828"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView26"
         app:layout_constraintHorizontal_bias="0.0"
@@ -164,7 +175,8 @@
         android:layout_width="134dp"
         android:layout_height="24dp"
         android:layout_marginTop="16dp"
-        android:text="Postal Code"
+        android:text="@string/postal_code"
+        android:textColor="#2B2828"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView27"
         app:layout_constraintHorizontal_bias="0.0"
@@ -176,7 +188,8 @@
         android:layout_width="129dp"
         android:layout_height="19dp"
         android:layout_marginTop="16dp"
-        android:text="Phone Number"
+        android:text="@string/phone_number"
+        android:textColor="#2B2828"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView28"
         app:layout_constraintStart_toStartOf="@+id/textView28"
@@ -186,10 +199,13 @@
         android:id="@+id/textView30"
         android:layout_width="118dp"
         android:layout_height="22dp"
-        android:layout_marginTop="16dp"
-        android:text="Card Number"
+        android:layout_marginTop="8dp"
+        android:hint=""
+        android:text="@string/card_number"
+        android:textColor="#2B2828"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView29"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
@@ -197,9 +213,13 @@
         android:id="@+id/editTextPhone"
         android:layout_width="349dp"
         android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/_03415290181"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextNumber"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -209,23 +229,26 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="number"
-        android:text="2161"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPostalAddress2"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress2"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        android:hint="@string/_2161"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextNumber2"
-        android:layout_width="349dp"
-        android:layout_height="36dp"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/_213405964038587"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/back_to_home_btn"
         app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextPhone"
         app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.47" />
 
     <EditText
         android:id="@+id/editTextTextPostalAddress2"
@@ -233,10 +256,11 @@
         android:layout_height="43dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:text="Bangladash"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPostalAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        android:hint="@string/bangladesh"
+        android:autofillHints="" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

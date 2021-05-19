@@ -14,7 +14,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView28"
         app:layout_constraintTop_toBottomOf="@+id/imageView28"
-        app:srcCompat="@drawable/image31" />
+        app:srcCompat="@drawable/image31"
+        android:contentDescription="@string/todo" />
 
 
     <TextView
@@ -23,7 +24,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="84dp"
-        android:text="Walking Shoe Bata "
+        android:text="@string/walking_shoe_bata"
         android:textColor="#101010"
         app:layout_constraintEnd_toEndOf="@+id/imageView31"
         app:layout_constraintTop_toTopOf="@+id/imageView31" />
@@ -34,6 +35,7 @@
         android:layout_height="11dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="303dp"
+        android:contentDescription="@string/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +49,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
+        android:contentDescription="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
@@ -67,7 +70,8 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image5" />
+        app:srcCompat="@drawable/image5"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -83,17 +87,18 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image6" />
+        app:srcCompat="@drawable/image6"
+        android:contentDescription="@string/todo" />
 
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/continue_btn"
         android:layout_width="345dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_btn"
-        android:text="Continue"
+        android:text="@string/continue_btn"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,7 +116,8 @@
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image14" />
+        app:srcCompat="@drawable/image14"
+        android:contentDescription="@string/todo" />
 
 
     <TextView
@@ -120,7 +126,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
-        android:text="Checkout"
+        android:text="@string/cart"
         android:textColor="#272727"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,13 +144,14 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView41"
-        app:srcCompat="@drawable/image31" />
+        app:srcCompat="@drawable/image31"
+        android:contentDescription="@string/todo" />
     <Button
         android:id="@+id/button3"
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="-"
+        android:text="@string/minus"
         app:layout_constraintStart_toStartOf="@+id/textView46"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -154,7 +161,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="1"
+        android:text="@string/_1"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -163,7 +170,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="+"
+        android:text="@string/plus"
         app:layout_constraintStart_toEndOf="@+id/button18"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -172,7 +179,7 @@
         android:layout_width="95dp"
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
-        android:text="Running Shoe  Lotto.LTD "
+        android:text="@string/running_shoe_lotto_ltd"
         android:textColor="#101010"
         app:layout_constraintEnd_toEndOf="@+id/imageView28"
         app:layout_constraintHorizontal_bias="0.644"
@@ -183,7 +190,7 @@
         android:id="@+id/textView46"
         android:layout_width="70dp"
         android:layout_height="20dp"
-        android:text="$48.00"
+        android:text="@string/_48_00"
         android:textColor="#61C6F4"
         app:layout_constraintEnd_toEndOf="@+id/textView49"
         app:layout_constraintHorizontal_bias="0.0"
@@ -196,6 +203,7 @@
         android:layout_width="111dp"
         android:layout_height="102dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/img1"
         app:layout_constraintEnd_toEndOf="@+id/imageView28"
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="@+id/imageView28"
@@ -206,7 +214,7 @@
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$42.00"
+        android:text="@string/_42_00"
         android:textColor="#61C6F4"
         app:layout_constraintEnd_toEndOf="@+id/textView45"
         app:layout_constraintHorizontal_bias="0.0"
@@ -218,6 +226,7 @@
         android:layout_width="113dp"
         android:layout_height="90dp"
         android:layout_marginStart="20dp"
+        android:contentDescription="@string/img2"
         app:layout_constraintBottom_toBottomOf="@+id/imageView31"
         app:layout_constraintStart_toStartOf="@+id/imageView31"
         app:layout_constraintTop_toTopOf="@+id/imageView31"
@@ -234,7 +243,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView31"
         app:layout_constraintTop_toBottomOf="@+id/imageView31"
-        app:srcCompat="@drawable/image31" />
+        app:srcCompat="@drawable/image31"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView50"
@@ -242,7 +252,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="84dp"
-        android:text="Loafer             Next "
+        android:text="@string/loafer_next"
         android:textColor="#101010"
         app:layout_constraintEnd_toEndOf="@+id/imageView24"
         app:layout_constraintTop_toTopOf="@+id/imageView24" />
@@ -252,6 +262,7 @@
         android:layout_width="334dp"
         android:layout_height="124dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/img3"
         app:layout_constraintEnd_toEndOf="@+id/imageView24"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView24"
@@ -262,7 +273,7 @@
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$64.00"
+        android:text="@string/_64_00"
         android:textColor="#61C6F4"
         app:layout_constraintEnd_toEndOf="@+id/textView50"
         app:layout_constraintHorizontal_bias="0.0"
@@ -275,7 +286,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="84dp"
-        android:text="PUMA Sneaker PUMA"
+        android:text="@string/puma_sneaker_puma"
         android:textColor="#333333"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintTop_toTopOf="@+id/imageView25" />
@@ -284,7 +295,7 @@
         android:id="@+id/textView47"
         android:layout_width="55dp"
         android:layout_height="20dp"
-        android:text="$33.00"
+        android:text="@string/_33_00"
         android:textColor="#61C6F4"
         app:layout_constraintEnd_toEndOf="@+id/textView43"
         app:layout_constraintHorizontal_bias="0.0"
@@ -299,7 +310,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView24"
         app:layout_constraintTop_toTopOf="@+id/imageView24"
-        app:srcCompat="@drawable/image32" />
+        app:srcCompat="@drawable/image32"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView29"
@@ -307,6 +319,7 @@
         android:layout_height="90dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/img3"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toTopOf="@+id/imageView25"
         app:srcCompat="@drawable/image33" />
@@ -316,7 +329,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="-"
+        android:text="@string/minus"
         app:layout_constraintStart_toStartOf="@+id/textView51"
         app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
@@ -325,16 +338,16 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="1"
+        android:text="@string/_1"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/back_to_home_btn"
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="+"
+        android:text="@string/plus"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
@@ -343,7 +356,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="-"
+        android:text="@string/minus"
         app:layout_constraintStart_toStartOf="@+id/textView42"
         app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
@@ -352,7 +365,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="1"
+        android:text="@string/_1"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
@@ -361,7 +374,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="+"
+        android:text="@string/plus"
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
@@ -370,7 +383,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="-"
+        android:text="@string/minus"
         app:layout_constraintStart_toStartOf="@+id/textView47"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
@@ -379,7 +392,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="1"
+        android:text="@string/_1"
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
@@ -388,7 +401,7 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginTop="8dp"
-        android:text="+"
+        android:text="@string/plus"
         app:layout_constraintStart_toEndOf="@+id/button13"
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 

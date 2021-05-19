@@ -25,6 +25,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
+        android:contentDescription="@string/Search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
@@ -38,6 +39,7 @@
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/notific"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -51,6 +53,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
+        android:contentDescription="@string/cam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -58,13 +61,13 @@
         app:srcCompat="@drawable/image6" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/back_to_home_btn"
         android:layout_width="345dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_btn"
-        android:text="Add Payment"
+        android:text="@string/add_payment_"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +133,7 @@
         android:id="@+id/textView20"
         android:layout_width="201dp"
         android:layout_height="35dp"
-        android:text="Profile"
+        android:text="@string/profile_"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +148,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="12dp"
-        android:text="Name"
+        android:text="@string/Name"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView20"
         app:layout_constraintHorizontal_bias="0.0"
@@ -159,16 +162,17 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Istiak mahmud Remon"
+        android:hint="@string/istiak_mahmud_remonn"
         app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="108dp"
         android:layout_height="24dp"
         android:layout_marginTop="24dp"
-        android:text="Address"
+        android:text="@string/address"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.004"
@@ -182,11 +186,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPostalAddress"
-        android:text="Shewrapara 958 "
+        android:hint="@string/shewrapara_9585"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView28"
@@ -205,7 +210,7 @@
         android:layout_width="129dp"
         android:layout_height="19dp"
         android:layout_marginTop="76dp"
-        android:text="Phone Number"
+        android:text="@string/phone_numberr"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView28"
         app:layout_constraintHorizontal_bias="0.0"
@@ -217,7 +222,7 @@
         android:layout_width="118dp"
         android:layout_height="22dp"
         android:layout_marginTop="24dp"
-        android:text="Card Number"
+        android:text="@string/card_numberr"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/textView29"
         app:layout_constraintStart_toStartOf="@+id/textView29"
@@ -232,7 +237,9 @@
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        android:hint="@string/_03948764572"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextNumber2"
@@ -241,12 +248,14 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        android:hint="@string/_64528526454972"
+        app:layout_constraintBottom_toTopOf="@+id/back_to_home_btn"
         app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextPhone"
         app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.19"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -255,10 +264,12 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:hint="@string/sabasabir934_gmail_com"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPostalAddress"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        android:autofillHints="" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

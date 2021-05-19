@@ -35,21 +35,13 @@
     <string name="shoeimg">shoeImg</string>
     <string name="welcomeimg">welcomeImg</string>
     <string name="continue_to_payment">Continue to Payment</string>
-    <string name="shewrapara_mirpur_dhaka_1216_house_no_938_road_no_9">Shewrapara, Mirpur, Dhaka-1216 House no: 938 Road no: 9</string>
-    <string name="address">Address</string>
     <string name="chatkhil_noakhali_house_no_22_road_no_7">Chatkhil, Noakhali House no: 22 Road no: 7</string>
-    <string name="notification">notification</string>
     <string name="best_sell">Best Sell</string>
     <string name="notifi">TODO</string>
-    <string name="todo">TODO</string>
     <string name="bristol">Bristol</string>
-    <string name="postal_code">Postal Code</string>
     <string name="create_address">Create Address</string>
     <string name="address_lane">Address Lane</string>
-    <string name="name">Name</string>
     <string name="add_address">Add Address</string>
-    <string name="city">City</string>
-    <string name="phone_number">Phone Number</string>
     <string name="your_name">Your name</string>
     <string name="john_wick">John Wick</string>
     <string name="home_address">home address</string>
@@ -67,5 +59,165 @@
     <string name="dont_have_an_account_sign_up">Dont Have an Account? Sign Up</string>
     <string name="alreadyAccount">Already Have an Account? Log In</string>
     <string name="remember_me">Remember Me</string>
+    <string name="display">display</string>
+
+    <string name="sneakers">Sneakers</string>
+
+    <string name="monk">Monk</string>
+
     <string name="favorite">Favorite</string>
+    <string name="home_img">home img</string>
+    <string name="shoes">shoes</string>
+
+    <string name="shoelist">shoelist</string>
+    <string name="loafers">Loafers</string>
+    <string name="menu">menu</string>
+
+    <string name="sho5">sho5</string>
+    <string name="featured">Featured</string>
+
+    <string name="chukka">Chukka</string>
+
+    <string name="shoe6">shoe6</string>
+    <string name="chelsea">Chelsea</string>
+
+    <string name="shoe1">shoe1</string>
+    <string name="shoe2">shoe2</string>
+    <string name="shoe3">shoe3</string>
+    <string name="shoe5">shoe5</string>
+    <string name="shoe4">shoe4</string>
+    <string name="derby">Derby</string>
+
+    <string name="imgg2">imgg2</string>
+
+    <string name="shewrapara_mirpur_dhaka_1216_house_no_938_road_no_9">Shewrapara, Mirpur, Dhaka-1216 House no: 938 Road no: 9</string>
+    <string name="plusbtn">+</string>
+
+    <string name="minusbtn">-</string>
+
+    <string name="total">Total</string>
+    <string name="_10_00">$10.00</string>
+    <string name="shipping">Shipping</string>
+    <string name="_5">5%</string>
+    <string name="discount">Discount</string>
+    <string name="_90_00">$90.00</string>
+    <string name="subtotal">Subtotal</string>
+
+    <string name="_100_00">$100.00</string>
+    <string name="notification">notification</string>
+    <string name="camera">camera</string>
+    <string name="confirm">Confirm</string>
+    <string name="brogue">BROGUE</string>
+    <string name="Monk">MONK</string>
+    <string name="Loafers">LOAFERS</string>
+    <string name="Derby">DERBY</string>
+    <string name="catagories">Categories</string>
+    <string name="boat">BOAT</string>
+    <string name="sandals">SANDALS</string>
+    <string name="Chelsea">CHELSEA</string>
+    <string name="Oxford">Oxford</string>
+    <string name="Chukka">CHUKKA</string>
+    <string name="Sneakers">SNEAKERS</string>
+
+    <string name="Brogue">Brogue</string>
+    <string name="Back">back</string>
+    <string name="Search">search</string>
+    <string name="Notification">notification</string>
+    <string name="Camera">camera</string>
+    <string name="Upload">upload</string>
+    <string name="img5">img5</string>
+    <string name="img">img</string>
+
+    <string name="img4">img4</string>
+    <string name="img6">img6</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="city">City</string>
+    <string name="address_line">Address Line</string>
+    <string name="istiak_mahmud_remn">Istiak mahmud Remon</string>
+    <string name="name">Name</string>
+    <string name="add_payment_details">Add Payment Details</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="card_number">Card Number</string>
+    <string name="bangladash">Bangladash</string>
+    <string name="upload">upload</string>
+    <string name="noti">noti</string>
+    <string name="istiak_mamud_remon">Istiak Mamud Remon</string>
+    <string name="shewrapara_958">Shewrapara 958</string>
+    <string name="_2161">2161</string>
+    <string name="_213405964038587">213405964038587</string>
+    <string name="bangladesh">Bangladesh</string>
+    <string name="_03415290181">03415290181</string>
+    <string name="_33_00">$33.00</string>
+    <string name="puma_sneaker_puma">PUMA Sneaker PUMA</string>
+    <string name="_64_00">$64.00</string>
+    <string name="loafer_next">Loafer Next</string>
+
+    <string name="plus">+</string>
+
+    <string name="img1">img1</string>
+    <string name="running_shoe_lotto_ltd">Running Shoe Lotto.LTD</string>
+
+    <string name="checkout">Checkout</string>
+    <string name="_1">1</string>
+    <string name="minus">-</string>
+    <string name="continue_btn">Continue</string>
+    <string name="img2">img2</string>
+
+    <string name="walking_shoe_bata">Walking Shoe Bata</string>
+    <string name="back">back</string>
+    <string name="search">search</string>
+    <string name="boats">Boat</string>
+    <string name="i_m_an_admin">Admin?</string>
+    <string name="not_an_admin">Not an Admin</string>
+    <string name="img3">img3</string>
+
+    <string name="payment">Payment</string>
+
+    <string name="add_to_cart">add_to_cart</string>
+    <string name="card">card</string>
+
+    <string name="you_have_successfully_completed_your_payment_procedure">You have successfully Completed Your Payment Procedure</string>
+
+    <string name="thumb">thumb</string>
+
+    <string name="you_have_successfully_added_address">You have successfully Added Address</string>
+
+    <string name="you_have_successfully_added_payment_details">You have successfully Added Payment details</string>
+    <string name="phone_numberr">Phone Number</string>
+    <string name="shewrapara_9585">Shewrapara 958</string>
+    <string name="address">Address</string>
+    <string name="card_numberr">Card Number</string>
+    <string name="istiak_mahmud_remonn">Istiak mahmud Remon</string>
+    <string name="profile_">Profile</string>
+    <string name="add_payment_">Add Payment</string>
+    <string name="Name">Name</string>
+    <string name="notific">notifi</string>
+    <string name="todo">contentDes</string>
+    <string name="sabasabir934_gmail_com">sabasabir934@gmail.com</string>
+    <string name="_03948764572">03948764572</string>
+    <string name="_64528526454972">64528526454972</string>
+    <string name="_42_00">$42.00</string>
+    <string name="_48_00">$48.00</string>
+    <string name="walking_shoe_bata_">Walking Shoe Bata</string>
+    <string name="order_again">Order Again</string>
+    <string name="bestall">BestAll</string>
+    <string name="cart">Cart</string>
+    <string name="title_activity_home_nav">HomeNavActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="username">Username</string>
+    <string name="cart">Cart</string>
+    <string name="orders">Orders</string>
+    <string name="category">Category</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
 </resources>

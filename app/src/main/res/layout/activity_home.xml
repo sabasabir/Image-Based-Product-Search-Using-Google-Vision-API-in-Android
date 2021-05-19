@@ -12,7 +12,7 @@
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/notification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toEndOf="@+id/imageView46"
@@ -26,8 +26,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="@string/camera"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image6" />
@@ -39,6 +40,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/upload"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -51,6 +53,7 @@
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/menu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image108" />
@@ -60,6 +63,7 @@
         android:layout_width="350dp"
         android:layout_height="63dp"
         android:layout_marginTop="68dp"
+        android:contentDescription="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,9 +72,10 @@
 
     <ImageView
         android:id="@+id/imageView107"
-        android:layout_width="359dp"
-        android:layout_height="193dp"
+        android:layout_width="407dp"
+        android:layout_height="162dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/home_img"
         app:layout_constraintEnd_toEndOf="@+id/imageView106"
         app:layout_constraintStart_toStartOf="@+id/imageView106"
         app:layout_constraintTop_toBottomOf="@+id/imageView106"
@@ -80,12 +85,12 @@
         android:id="@+id/textView53"
         android:layout_width="120dp"
         android:layout_height="32dp"
-        android:layout_marginTop="8dp"
-        android:text="BestAll"
+        android:layout_marginTop="12dp"
+        android:text="@string/bestall"
         android:textColor="#494848"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView107"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="@+id/imageView107"
         app:layout_constraintTop_toBottomOf="@+id/imageView107" />
 
@@ -93,33 +98,37 @@
         android:id="@+id/imageView108"
         android:layout_width="347dp"
         android:layout_height="112dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/shoelist"
         app:layout_constraintEnd_toEndOf="@+id/imageView107"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView107"
         app:layout_constraintTop_toBottomOf="@+id/textView53"
         app:srcCompat="@drawable/image106" />
 
     <ImageView
         android:id="@+id/imageView109"
-        android:layout_width="347dp"
-        android:layout_height="112dp"
+        android:layout_width="346dp"
+        android:layout_height="114dp"
+        android:contentDescription="@string/shoes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView108"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView108"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.384"
         app:srcCompat="@drawable/image107" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="120dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="8dp"
-        android:text="Favorite"
+        android:layout_width="128dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/favorite"
         android:textColor="#434343"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView108"
-        tools:layout_editor_absoluteX="26dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView108" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
