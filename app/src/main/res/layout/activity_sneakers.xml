@@ -83,8 +83,8 @@
     <ImageView
         android:id="@+id/imageView98"
         android:layout_width="179dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image98" />
@@ -92,7 +92,8 @@
     <ImageView
         android:id="@+id/imageView99"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/imageView98"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image99" />
@@ -100,7 +101,7 @@
     <ImageView
         android:id="@+id/imageView100"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView99"
         app:layout_constraintStart_toEndOf="@+id/imageView101"
@@ -110,7 +111,7 @@
     <ImageView
         android:id="@+id/imageView101"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView98"
         app:layout_constraintTop_toBottomOf="@+id/imageView98"
@@ -119,7 +120,7 @@
     <ImageView
         android:id="@+id/imageView102"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView100"
         app:layout_constraintStart_toEndOf="@+id/imageView103"
@@ -129,7 +130,7 @@
     <ImageView
         android:id="@+id/imageView103"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView101"
         app:layout_constraintTop_toBottomOf="@+id/imageView101"

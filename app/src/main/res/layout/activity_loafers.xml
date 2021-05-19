@@ -82,8 +82,8 @@
 
     <ImageView
         android:id="@+id/imageView74"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
@@ -91,8 +91,9 @@
 
     <ImageView
         android:id="@+id/imageView76"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/imageView74"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
@@ -100,8 +101,8 @@
 
     <ImageView
         android:id="@+id/imageView75"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView74"
         app:layout_constraintTop_toBottomOf="@+id/imageView74"
@@ -109,27 +110,29 @@
 
     <ImageView
         android:id="@+id/imageView77"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView76"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView75"
         app:layout_constraintTop_toBottomOf="@+id/imageView76"
         app:srcCompat="@drawable/image77" />
 
     <ImageView
         android:id="@+id/imageView78"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toEndOf="@+id/imageView79"
         app:layout_constraintTop_toBottomOf="@+id/imageView77"
         app:srcCompat="@drawable/image78" />
 
     <ImageView
         android:id="@+id/imageView79"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView75"
         app:layout_constraintTop_toBottomOf="@+id/imageView75"

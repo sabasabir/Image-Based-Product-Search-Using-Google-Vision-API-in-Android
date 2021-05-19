@@ -82,24 +82,26 @@
 
     <ImageView
         android:id="@+id/imageView86"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image86" />
 
     <ImageView
         android:id="@+id/imageView87"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="171dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toEndOf="@+id/imageView86"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image87" />
 
     <ImageView
         android:id="@+id/imageView88"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView87"
         app:layout_constraintStart_toEndOf="@+id/imageView89"
@@ -108,8 +110,8 @@
 
     <ImageView
         android:id="@+id/imageView89"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView86"
         app:layout_constraintTop_toBottomOf="@+id/imageView86"
@@ -117,8 +119,8 @@
 
     <ImageView
         android:id="@+id/imageView90"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView88"
         app:layout_constraintStart_toEndOf="@+id/imageView91"
@@ -127,8 +129,8 @@
 
     <ImageView
         android:id="@+id/imageView91"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView89"
         app:layout_constraintTop_toBottomOf="@+id/imageView89"
