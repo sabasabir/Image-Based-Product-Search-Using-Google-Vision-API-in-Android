@@ -13,9 +13,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_btn"
-        android:text="@string/checkout"
+        android:text="Checkout"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/back_to_home_btn"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,8 +32,7 @@
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image3"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/image3" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -42,7 +41,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
-        android:contentDescription="@string/Search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
@@ -57,7 +55,6 @@
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
-        android:contentDescription="@string/Notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
@@ -80,17 +77,16 @@
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image6"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/image6" />
 
     <Button
-        android:id="@+id/back_to_home_btn"
+        android:id="@+id/button7"
         android:layout_width="345dp"
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/custom_btn"
-        android:text="@string/confirm"
+        android:text="Confirm"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,15 +105,14 @@
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image14"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/image14" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="121dp"
         android:layout_height="35dp"
         android:layout_marginTop="46dp"
-        android:text="@string/payment"
+        android:text="Payment"
         android:textColor="#302F2F"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +125,6 @@
         android:layout_width="972dp"
         android:layout_height="192dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView31"
@@ -153,7 +147,6 @@
         android:layout_width="379dp"
         android:layout_height="44dp"
         android:layout_marginBottom="16dp"
-        android:contentDescription="@string/add_to_cart"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +158,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="12dp"
-        android:text="@string/subtotal"
+        android:text="Subtotal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView32" />
 
@@ -174,7 +167,7 @@
         android:layout_width="78dp"
         android:layout_height="17dp"
         android:layout_marginTop="16dp"
-        android:text="@string/_90_00"
+        android:text="$90.00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toEndOf="@+id/textView33"
@@ -185,7 +178,7 @@
         android:layout_width="69dp"
         android:layout_height="20dp"
         android:layout_marginTop="8dp"
-        android:text="@string/discount"
+        android:text="Discount"
         app:layout_constraintEnd_toEndOf="@+id/textView33"
         app:layout_constraintStart_toStartOf="@+id/textView33"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
@@ -195,7 +188,7 @@
         android:layout_width="77dp"
         android:layout_height="22dp"
         android:layout_marginTop="8dp"
-        android:text="@string/_5"
+        android:text="5%"
         app:layout_constraintEnd_toEndOf="@+id/textView34"
         app:layout_constraintStart_toStartOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
@@ -205,7 +198,7 @@
         android:layout_width="65dp"
         android:layout_height="18dp"
         android:layout_marginTop="8dp"
-        android:text="@string/shipping"
+        android:text="Shipping"
         app:layout_constraintEnd_toEndOf="@+id/textView35"
         app:layout_constraintStart_toStartOf="@+id/textView35"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
@@ -215,7 +208,7 @@
         android:layout_width="70dp"
         android:layout_height="17dp"
         android:layout_marginTop="8dp"
-        android:text="@string/_10_00"
+        android:text="$10.00"
         app:layout_constraintEnd_toEndOf="@+id/textView36"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView36"
@@ -240,7 +233,7 @@
         android:layout_width="62dp"
         android:layout_height="18dp"
         android:layout_marginTop="24dp"
-        android:text="@string/total"
+        android:text="Total"
         app:layout_constraintEnd_toEndOf="@+id/textView37"
         app:layout_constraintStart_toStartOf="@+id/textView37"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
@@ -250,7 +243,7 @@
         android:layout_width="72dp"
         android:layout_height="19dp"
         android:layout_marginTop="24dp"
-        android:text="@string/_100_00"
+        android:text="$100.00"
         app:layout_constraintEnd_toEndOf="@+id/textView38"
         app:layout_constraintStart_toStartOf="@+id/textView38"
         app:layout_constraintTop_toBottomOf="@+id/textView38" />

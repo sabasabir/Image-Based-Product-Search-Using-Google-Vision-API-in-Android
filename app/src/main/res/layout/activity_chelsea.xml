@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ChelseaActivity">
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="28dp"
         android:layout_height="11dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="303dp"
-        android:contentDescription="@string/back"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +24,6 @@
         android:layout_height="21dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +35,7 @@
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/notification"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -51,7 +49,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="@string/camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -64,7 +61,6 @@
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/upload"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -76,7 +72,7 @@
         android:layout_width="156dp"
         android:layout_height="51dp"
         android:layout_marginTop="44dp"
-        android:text="@string/chelsea"
+        android:text="Chelsea"
         android:textColor="#3A3A3A"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,28 +82,25 @@
 
     <ImageView
         android:id="@+id/imageView60"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
-        android:contentDescription="@string/shoe1"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image60" />
 
     <ImageView
         android:id="@+id/imageView61"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
-        android:contentDescription="@string/shoe2"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         app:layout_constraintStart_toEndOf="@+id/imageView60"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image61" />
 
     <ImageView
         android:id="@+id/imageView58"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe4"
         app:layout_constraintEnd_toEndOf="@+id/imageView61"
         app:layout_constraintStart_toEndOf="@+id/imageView56"
         app:layout_constraintTop_toBottomOf="@+id/imageView61"
@@ -115,11 +108,10 @@
 
     <ImageView
         android:id="@+id/imageView56"
-        android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_width="172dp"
+        android:layout_height="171dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView60"
         app:srcCompat="@drawable/image56" />
@@ -129,7 +121,6 @@
         android:layout_width="179dp"
         android:layout_height="197dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe4"
         app:layout_constraintEnd_toEndOf="@+id/imageView58"
         app:layout_constraintStart_toEndOf="@+id/imageView59"
         app:layout_constraintTop_toBottomOf="@+id/imageView58"
@@ -140,7 +131,6 @@
         android:layout_width="179dp"
         android:layout_height="197dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe5"
         app:layout_constraintStart_toStartOf="@+id/imageView56"
         app:layout_constraintTop_toBottomOf="@+id/imageView56"
         app:srcCompat="@drawable/image59" />

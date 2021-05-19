@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FavoriteActivity">
-
     <TextView
         android:id="@+id/textView44"
         android:layout_width="103dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
-        android:text="@string/favorite"
+        android:text="@string/Favorite"
         android:textColor="#333333"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,12 +23,12 @@
         android:layout_height="11dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="303dp"
-        android:contentDescription="@string/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image3" />
+        app:srcCompat="@drawable/image3"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -38,7 +37,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
-        android:contentDescription="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.585"
@@ -53,14 +51,14 @@
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="700dp"
-        android:contentDescription="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image5" />
+        app:srcCompat="@drawable/image5"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -70,7 +68,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="704dp"
-        android:contentDescription="@string/camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -85,7 +82,6 @@
         android:layout_width="179dp"
         android:layout_height="197dp"
         android:layout_marginStart="16dp"
-        android:contentDescription="@string/shoe1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView44"
         app:srcCompat="@drawable/image37" />
@@ -95,7 +91,6 @@
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/upload"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
@@ -106,7 +101,6 @@
         android:id="@+id/imageView40"
         android:layout_width="191dp"
         android:layout_height="195dp"
-        android:contentDescription="@string/shoe2"
         app:layout_constraintStart_toEndOf="@+id/imageView39"
         app:layout_constraintTop_toBottomOf="@+id/textView44"
         app:srcCompat="@drawable/image34" />
@@ -116,7 +110,6 @@
         android:layout_width="179dp"
         android:layout_height="197dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/shoe3"
         app:layout_constraintStart_toStartOf="@+id/imageView39"
         app:layout_constraintTop_toBottomOf="@+id/imageView39"
         app:srcCompat="@drawable/image35" />
@@ -126,7 +119,6 @@
         android:layout_width="188dp"
         android:layout_height="198dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/shoe4"
         app:layout_constraintEnd_toEndOf="@+id/imageView40"
         app:layout_constraintStart_toEndOf="@+id/imageView41"
         app:layout_constraintTop_toBottomOf="@+id/imageView40"
@@ -137,7 +129,6 @@
         android:layout_width="179dp"
         android:layout_height="197dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/shoe5"
         app:layout_constraintStart_toStartOf="@+id/imageView41"
         app:layout_constraintTop_toBottomOf="@+id/imageView41"
         app:srcCompat="@drawable/image38" />
@@ -147,7 +138,6 @@
         android:layout_width="187dp"
         android:layout_height="197dp"
         android:layout_marginTop="12dp"
-        android:contentDescription="@string/shoe6"
         app:layout_constraintEnd_toEndOf="@+id/imageView42"
         app:layout_constraintStart_toEndOf="@+id/imageView43"
         app:layout_constraintTop_toBottomOf="@+id/imageView42"

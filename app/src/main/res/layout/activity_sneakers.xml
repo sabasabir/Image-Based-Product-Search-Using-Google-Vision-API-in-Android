@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SneakersActivity">
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="28dp"
         android:layout_height="11dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="303dp"
-        android:contentDescription="@string/back_arrow"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,15 +28,14 @@
         app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image4"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/image4" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="20dp"
         android:layout_height="21dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/search"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -51,7 +49,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="@string/camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -68,15 +65,14 @@
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image14"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/image14" />
 
     <TextView
         android:id="@+id/textView48"
         android:layout_width="156dp"
         android:layout_height="40dp"
         android:layout_marginTop="44dp"
-        android:text="@string/sneakers"
+        android:text="Sneakers"
         android:textColor="#3A3A3A"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,9 +83,8 @@
     <ImageView
         android:id="@+id/imageView98"
         android:layout_width="179dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe1"
+        android:layout_height="171dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image98" />
@@ -97,8 +92,8 @@
     <ImageView
         android:id="@+id/imageView99"
         android:layout_width="179dp"
-        android:layout_height="197dp"
-        android:contentDescription="@string/shoe2"
+        android:layout_height="171dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/imageView98"
         app:layout_constraintTop_toBottomOf="@+id/textView48"
         app:srcCompat="@drawable/image99" />
@@ -106,9 +101,8 @@
     <ImageView
         android:id="@+id/imageView100"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe3"
         app:layout_constraintEnd_toEndOf="@+id/imageView99"
         app:layout_constraintStart_toEndOf="@+id/imageView101"
         app:layout_constraintTop_toBottomOf="@+id/imageView99"
@@ -117,9 +111,8 @@
     <ImageView
         android:id="@+id/imageView101"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe6"
         app:layout_constraintStart_toStartOf="@+id/imageView98"
         app:layout_constraintTop_toBottomOf="@+id/imageView98"
         app:srcCompat="@drawable/image101" />
@@ -127,9 +120,8 @@
     <ImageView
         android:id="@+id/imageView102"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe4"
         app:layout_constraintEnd_toEndOf="@+id/imageView100"
         app:layout_constraintStart_toEndOf="@+id/imageView103"
         app:layout_constraintTop_toBottomOf="@+id/imageView100"
@@ -138,9 +130,8 @@
     <ImageView
         android:id="@+id/imageView103"
         android:layout_width="179dp"
-        android:layout_height="197dp"
+        android:layout_height="171dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/shoe5"
         app:layout_constraintStart_toStartOf="@+id/imageView101"
         app:layout_constraintTop_toBottomOf="@+id/imageView101"
         app:srcCompat="@drawable/image103" />
