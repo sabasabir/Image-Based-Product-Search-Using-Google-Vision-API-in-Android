@@ -1,5 +1,6 @@
 package com.example.imageBasedProductSearch;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
@@ -18,6 +19,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.imageBasedProductSearch.Prevalent.Prevalent;
+import com.example.imageBasedProductSearch.sql.DatabaseHelper;
+import com.example.imageBasedProductSearch.utilis.PreferenceUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -25,6 +28,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.io.ObjectInputValidation;
 import java.util.Objects;
 
 import io.paperdb.Paper;
@@ -35,8 +39,10 @@ public class LoginActivity extends AppCompatActivity {
     Button login;
     TextView t_signup,forgotTextLink;
     FirebaseAuth fAuth;
-
-     CheckBox checkBoxRememberMe;
+String parentDbName= "User";
+    TextView adminLink, notAdminLink;
+    //private InputValidation inputValidation;
+    private DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +58,16 @@ public class LoginActivity extends AppCompatActivity {
         t_signup = findViewById(R.id.t_sign_up);
         forgotTextLink = findViewById(R.id.forgetPassword);
 
-        checkBoxRememberMe= findViewById(R.id.rememberMeCheckBox);
-        Paper.init(this);
+        adminLink= findViewById(R.id.admin);
+        notAdminLink= findViewById(R.id.not_admin_panel_link);
 
 
+        if(PreferenceUtils.getEmail(this)!=null|| !PreferenceUtils.getEmail(this).equals("")){
+    Intent intent= new Intent(LoginActivity.this, HomeActivity.class);
+}
+else{
+
+        }
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +91,17 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
 
+                if(parentDbName.equals("Admins")){
+                    Toast.makeText(LoginActivity.this, "Welcome Admin, You are Logged in Successfully", Toast.LENGTH_SHORT);
+                    Intent intent= new Intent (LoginActivity.this, AdminAddNewProductsActivity.class);
+                    startActivity(intent);
+                }
+                else if(parentDbName.equals("Users")){
+                    Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT);
+                    Intent intent= new Intent (LoginActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                }
+
                 // authenticate the user
 
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -100,9 +123,28 @@ public class LoginActivity extends AppCompatActivity {
 
                     }
                 });
+               // verifyFromSQLite();
 
             }
         });
+adminLink.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        login.setText("Login Admin");
+        adminLink.setVisibility(View.INVISIBLE);
+        notAdminLink.setVisibility(View.VISIBLE);
+        parentDbName= "Admins";
+    }
+});
+notAdminLink.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        login.setText("Login");
+        adminLink.setVisibility(View.VISIBLE);
+        notAdminLink.setVisibility(View.INVISIBLE);
+        parentDbName= "Users";
+    }
+});
 
         t_signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,4 +197,16 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
+//    private void verifyFromSQLite(){
+//        String email= mEmail.getText().toString().trim();
+//        String password=mPassword.getText().toString().trim();
+//       if(databaseHelper.checkUser(email, password)){
+//           PreferenceUtils.saveEmail(email, this);
+//           PreferenceUtils.savePassword(password, this);
+//           Intent accountsIntent= new Intent (activi,  HomeActivity.class);
+//           accountsIntent.putExtra("Email", mEmail.getText().toString().trim());
+//
+//
+//       }
+//    }
 }
