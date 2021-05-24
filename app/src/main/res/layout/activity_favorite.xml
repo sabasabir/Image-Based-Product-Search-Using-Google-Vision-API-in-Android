@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FavoriteActivity">
+
     <TextView
         android:id="@+id/textView44"
         android:layout_width="103dp"
         android:layout_height="37dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
-        android:text="@string/Favorite"
+        android:text="@string/favorite"
         android:textColor="#333333"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"

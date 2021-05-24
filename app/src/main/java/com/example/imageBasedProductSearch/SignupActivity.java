@@ -17,7 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.imageBasedProductSearch.utilis.Constants;
+import com.example.imageBasedProductSearch.utilis.*;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -27,8 +27,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -65,7 +63,7 @@ public class SignupActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences(Constants.PREF, MODE_PRIVATE);
 
 //        if(fAuth.getCurrentUser() != null){
-//            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//            startActivity(new Intent(getApplicationContext(),WelcomePageActivity.class));
 //            finish();
 //        }
 //

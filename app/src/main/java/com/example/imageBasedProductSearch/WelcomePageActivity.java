@@ -1,19 +1,21 @@
 package com.example.imageBasedProductSearch;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Camera;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.imageBasedProductSearch.utilis.Constants;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
-    Button login;
+import com.example.imageBasedProductSearch.utilis.*;
+
+public class WelcomePageActivity extends AppCompatActivity {
+    Button login, camera;
     TextView sign_up, tGuestUser;
+
 
     private SharedPreferences sharedPreferences;
 
@@ -24,12 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
         login = findViewById(R.id.login_btn);
         sign_up = (TextView) findViewById(R.id.sign_up);
-        tGuestUser=(TextView) findViewById(R.id.tGuestUser);
+        tGuestUser = (TextView) findViewById(R.id.tGuestUser);
+
 
         sharedPreferences = getSharedPreferences(Constants.PREF, MODE_PRIVATE);
 
-        if (sharedPreferences.contains(Constants.KEY_EMAIL)){
-            Intent intent= new Intent(MainActivity.this, HomeActivity.class);
+        if (sharedPreferences.contains(Constants.KEY_EMAIL)) {
+            Intent intent = new Intent(WelcomePageActivity.this, HomeActivity.class);
             startActivity(intent);
         }
 
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                Intent i = new Intent(WelcomePageActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });
@@ -45,23 +48,24 @@ public class MainActivity extends AppCompatActivity {
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(MainActivity.this, SignupActivity.class);
+                Intent i = new Intent(WelcomePageActivity.this, SignupActivity.class);
                 startActivity(i);
             }
         });
         tGuestUser.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent i= new Intent(MainActivity.this,HomeActivity.class);
-        startActivity(i);
-    }
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(WelcomePageActivity.this, HomeActivity.class);
+                startActivity(i);
+            }
 
-});
+        });
+
 
     }
 
     public void click(View view) {
-        Intent i= new Intent(MainActivity.this,SignupActivity.class);
+        Intent i = new Intent(WelcomePageActivity.this, SignupActivity.class);
         startActivity(i);
         finish();
     }

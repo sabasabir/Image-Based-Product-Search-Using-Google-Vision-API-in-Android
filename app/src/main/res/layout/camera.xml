@@ -1,91 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="28dp"
-        android:layout_height="11dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="303dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image3"
-        android:contentDescription="@string/todo" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".Camera">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="20dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="700dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.585"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image4"
-        android:contentDescription="@string/todo" />
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="20dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="700dp"
-        android:contentDescription="@string/notification"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image5" />
+        android:contentDescription="ImageView" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="48dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="704dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image6"
-        android:contentDescription="@string/todo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp">
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="20dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/camera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image14" />
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_round"
+            android:contentDescription="@string/Camera"
+            android:src="@drawable/ic_camera_icon_white" />
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="490dp"
-        android:layout_height="619dp"
-        android:contentDescription="@string/display"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/image28" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

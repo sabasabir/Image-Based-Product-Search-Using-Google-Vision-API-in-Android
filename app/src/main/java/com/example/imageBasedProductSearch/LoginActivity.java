@@ -17,7 +17,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.imageBasedProductSearch.utilis.Constants;
+import com.example.imageBasedProductSearch.utilis.*;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,8 +33,6 @@ public class LoginActivity extends AppCompatActivity {
     Button login;
     TextView t_signup,forgotTextLink;
     FirebaseAuth fAuth;
-String parentDbName= "User";
-    TextView adminLink, notAdminLink;
     //private InputValidation inputValidation;
 
     private SharedPreferences sharedPreferences;
@@ -53,8 +51,7 @@ String parentDbName= "User";
         t_signup = findViewById(R.id.t_sign_up);
         forgotTextLink = findViewById(R.id.forgetPassword);
 
-        adminLink= findViewById(R.id.admin);
-        notAdminLink= findViewById(R.id.not_admin_panel_link);
+
 
         sharedPreferences = getSharedPreferences(Constants.PREF, MODE_PRIVATE);
 
@@ -79,17 +76,6 @@ String parentDbName= "User";
                     mPassword.setError("Password Must be >= 6 Characters");
                     return;
                 }
-
-//                if(parentDbName.equals("Admins")){
-//                    Toast.makeText(LoginActivity.this, "Welcome Admin, You are Logged in Successfully", Toast.LENGTH_SHORT);
-//                    Intent intent= new Intent (LoginActivity.this, AdminAddNewProductsActivity.class);
-//                    startActivity(intent);
-//                }
-//                else if(parentDbName.equals("Users")){
-//                    Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT);
-//                    Intent intent= new Intent (LoginActivity.this, HomeActivity.class);
-//                    startActivity(intent);
-//                }
 
                 // authenticate the user
 
@@ -118,24 +104,6 @@ String parentDbName= "User";
 
             }
         });
-//adminLink.setOnClickListener(new View.OnClickListener() {
-//    @Override
-//    public void onClick(View v) {
-//        login.setText("Login Admin");
-//        adminLink.setVisibility(View.INVISIBLE);
-//        notAdminLink.setVisibility(View.VISIBLE);
-//        parentDbName= "Admins";
-//    }
-//});
-//notAdminLink.setOnClickListener(new View.OnClickListener() {
-//    @Override
-//    public void onClick(View v) {
-//        login.setText("Login");
-//        adminLink.setVisibility(View.VISIBLE);
-//        notAdminLink.setVisibility(View.INVISIBLE);
-//        parentDbName= "Users";
-//    }
-//});
 
         t_signup.setOnClickListener(new View.OnClickListener() {
             @Override
